@@ -7,7 +7,7 @@ from gtts import gTTS
 from PIL import Image
 
 st.title("Texto a Audio")
-image = Image.open('text_to_audio.png',heigth=200)
+image = Image.open('text_to_audio.png',width=200)
 
 st.image(image, caption='')
 
