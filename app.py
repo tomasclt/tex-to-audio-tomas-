@@ -4,6 +4,11 @@ import time
 import glob
 import os
 from gtts import gTTS
+from PIL import Image
+
+image = Image.open('text_to_audio.png')
+
+st.image(image, caption='')
 
 
 try:
