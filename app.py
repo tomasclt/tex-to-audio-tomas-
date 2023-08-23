@@ -6,7 +6,7 @@ import os
 from gtts import gTTS
 from PIL import Image
 
-st.title("Interfaz Multimodal 1")
+st.title("Interfaz Multimodal 1.")
 image = Image.open('text_to_audio.png')
 
 st.image(image, width=200)
@@ -17,7 +17,7 @@ try:
 except:
     pass
 
-st.subheader("Texto a audio")
+st.subheader("Texto a audio.")
 st.write('Las interfaces de texto a audio son fundamentales en las interfaces multimodales ya que permiten '  
          'una comunicación más accesible y natural, facilitando la inclusión de personas con discapacidades ' 
          ' visuales y permitiendo la interacción en situaciones donde no es posible leer texto. Estas interfaces '  
@@ -25,7 +25,7 @@ st.write('Las interfaces de texto a audio son fundamentales en las interfaces mu
          ' sea más accesible e intuitiva para todos los usuarios')
            
 
-text = st.text_input("Ingrese el texto")
+text = st.text_input("Ingrese el texto.")
 
 tld="es"
 
