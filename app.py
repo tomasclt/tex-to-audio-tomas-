@@ -14,6 +14,7 @@ st.title("Text to speech")
 
 text = st.text_input("Enter text")
 
+tld="com.mx"
 
 def text_to_speech(text, tld):
     
