@@ -29,7 +29,7 @@ def text_to_speech(text, tld):
 display_output_text = st.checkbox("Display output text")
 
 if st.button("convert"):
-    result, output_text = text_to_speech(text, tld)
+    result, output_text = text_to_speech(text, tld=tld)
     audio_file = open(f"temp/{result}.mp3", "rb")
     audio_bytes = audio_file.read()
     st.markdown(f"## Your audio:")
