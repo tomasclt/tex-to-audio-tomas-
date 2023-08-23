@@ -6,7 +6,8 @@ import os
 from gtts import gTTS
 from PIL import Image
 
-image = Image.open('text_to_audio.png')
+st.title("Texto a Audio")
+image = Image.open('text_to_audio.png',height=200)
 
 st.image(image, caption='')
 
@@ -15,7 +16,7 @@ try:
     os.mkdir("temp")
 except:
     pass
-st.title("Texto a Audio")
+
 st.subheader("Interfaz Multimodal 1")
 st.write('Las interfaces de texto a audio son fundamentales en las interfaces multimodales ya que permiten '  
          'una comunicación más accesible y natural, facilitando la inclusión de personas con discapacidades ' 
