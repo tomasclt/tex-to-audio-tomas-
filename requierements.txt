@@ -1,2 +1,2 @@
 streamlit==0.80.0
-gTTS==2.2.2
+gTTS
