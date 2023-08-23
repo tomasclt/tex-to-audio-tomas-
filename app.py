@@ -12,11 +12,11 @@ except:
     pass
 st.title("Texto a Audio")
 st.subheader("Interfaz Multimodal 1")
-st.write("Las interfaces de texto a audio son fundamentales en las interfaces multimodales ya que permiten una comunicación más accesible y natural,
-          facilitando la inclusión de personas con discapacidades visuales y permitiendo la interacción en situaciones 
-          donde no es posible leer texto. Estas interfaces también impulsan tecnologías emergentes 
-          como los asistentes de voz inteligentes, haciendo que la tecnología sea más accesible e intuitiva para todos los usuarios.
-        ")
+st.write("Las interfaces de texto a audio son fundamentales en las interfaces multimodales ya que permiten " \ 
+         " una comunicación más accesible y natural, facilitando la inclusión de personas con discapacidades "
+         " visuales y permitiendo la interacción en situaciones donde no es posible leer texto. Estas interfaces " \ 
+         " también impulsan tecnologías emergentes como los asistentes de voz inteligentes, haciendo que la tecnología "\
+         " sea más accesible e intuitiva para todos los usuarios")
            
 
 text = st.text_input("Ingrese el texto")
