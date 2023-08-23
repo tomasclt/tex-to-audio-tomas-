@@ -10,9 +10,9 @@ try:
     os.mkdir("temp")
 except:
     pass
-st.title("Text to speech")
+st.title("Texto a Audio")
 
-text = st.text_input("Enter text")
+text = st.text_input("Ingrese el texto")
 
 tld="es"
 
@@ -27,7 +27,7 @@ def text_to_speech(text, tld):
     return my_file_name, text
 
 
-display_output_text = st.checkbox("Display output text")
+#display_output_text = st.checkbox("Verifica el texto")
 
 if st.button("convert"):
     result, output_text = text_to_speech(text, tld)
@@ -36,9 +36,9 @@ if st.button("convert"):
     st.markdown(f"## Your audio:")
     st.audio(audio_bytes, format="audio/mp3", start_time=0)
 
-    if display_output_text:
-        st.markdown(f"## Output text:")
-        st.write(f" {output_text}")
+    #if display_output_text:
+    st.markdown(f"## Output text:")
+    st.write(f" {output_text}")
 
 
 def remove_files(n):
