@@ -52,6 +52,14 @@ if st.button("convertir"):
     #if display_output_text:
     st.markdown(f"## Texto en audio:")
     st.write(f" {output_text}")
+    
+ if st.button("ElevenLAabs",key=2):
+     from elevenlabs import play
+     from elevenlabs.client import ElevenLabs
+     client = ElevenLabs(api_key="a71bb432d643bbf80986c0cf0970d91a", # Defaults to ELEVEN_API_KEY)
+     audio = client.generate(text=f" {output_text}",voice="Rachel",model="eleven_multilingual_v1")
+     audio_file = open(f"temp/{audio}.mp3", "rb")
+
 
 
 def remove_files(n):
