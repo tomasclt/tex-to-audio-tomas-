@@ -8,8 +8,10 @@ from PIL import Image
 
 st.title("Conversión de Texto a Audio")
 image = Image.open('gato_raton.png')
-
 st.image(image, width=350)
+with st.sidebar:
+    st.subheader("Esrcibe y/o selecciona texto para ser escuchado.")
+
 
 try:
     os.mkdir("temp")
