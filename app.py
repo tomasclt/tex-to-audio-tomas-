@@ -6,7 +6,7 @@ import os
 from gtts import gTTS
 from PIL import Image
 
-st.title("Una pequeña Fábula.")
+st.title("Conversión de Texto a Audio")
 image = Image.open('gato_raton.png')
 
 st.image(image, width=400)
@@ -16,7 +16,7 @@ try:
 except:
     pass
 
-st.subheader("Texto a audio.")
+st.subheader("Una pequeña Fábula.")
 st.write('¡Ay! -dijo el ratón-. El mundo se hace cada día más pequeño. Al principio era tan grande que le tenía miedo. '  
          ' Corría y corría y por cierto que me alegraba ver esos muros, a diestra y siniestra, en la distancia. ' 
          ' Pero esas paredes se estrechan tan rápido que me encuentro en el último cuarto y ahí en el rincón está '  
