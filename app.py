@@ -6,8 +6,8 @@ import os
 from gtts import gTTS
 from PIL import Image
 
-st.title("Interfaces Multimodales.")
-image = Image.open('text_to_audio.png')
+st.title("Una pequeña Fábula.")
+image = Image.open('gato_raton.png')
 
 st.image(image, width=200)
 
@@ -18,14 +18,14 @@ except:
     pass
 
 st.subheader("Texto a audio.")
-st.write('Las interfaces de texto a audio son fundamentales en las interfaces multimodales ya que permiten '  
-         'una comunicación más accesible y natural, facilitando la inclusión de personas con discapacidades ' 
-         ' visuales y permitiendo la interacción en situaciones donde no es posible leer texto. Estas interfaces '  
-         ' también impulsan tecnologías emergentes como los asistentes de voz inteligentes, haciendo que la tecnología ' 
-         ' sea más accesible e intuitiva para todos los usuarios')
+st.write('¡Ay! -dijo el ratón-. El mundo se hace cada día más pequeño. Al principio era tan grande que le tenía miedo. '  
+         ' Corría y corría y por cierto que me alegraba ver esos muros, a diestra y siniestra, en la distancia. ' 
+         ' Pero esas paredes se estrechan tan rápido que me encuentro en el último cuarto y ahí en el rincón está '  
+         ' la trampa sobre la cual debo pasar -Todo lo que debes hacer es cambiar de rumbo -dijo el gato...y se lo comió. ' 
+         )
            
 
-text = st.text_input("Ingrese el texto.")
+text = st.text_input("Ingrese El texto.")
 
 tld="es"
 
