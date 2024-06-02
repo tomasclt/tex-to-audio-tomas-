@@ -9,7 +9,7 @@ from PIL import Image
 st.title("Conversión de Texto a Audio")
 image = Image.open('gato_raton.png')
 
-st.image(image, width=300)
+st.image(image, width=350)
 
 try:
     os.mkdir("temp")
