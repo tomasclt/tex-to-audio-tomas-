@@ -53,7 +53,7 @@ if st.button("convertir"):
      st.audio(audio_bytes, format="audio/mp3", start_time=0)
 
      #if display_output_text:
-     #st.markdown(f"## Texto en audio:")
+     st.markdown(f"Quieres escucharlo?, copia el texto")
      #st.write(f" {output_text}")
     
 #if st.button("ElevenLAabs",key=2):
