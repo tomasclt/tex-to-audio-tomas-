@@ -27,8 +27,8 @@ st.write('¡Ay! -dijo el ratón-. El mundo se hace cada día más pequeño. Al p
         
         )
            
-
-text = st.text_input("Ingrese El texto.")
+st.markdown(f"Quieres escucharlo?, copia el texto")
+text = st.text_input("Ingrese El texto a escuchar.")
 
 tld="es"
 
@@ -53,7 +53,7 @@ if st.button("convertir"):
      st.audio(audio_bytes, format="audio/mp3", start_time=0)
 
      #if display_output_text:
-     st.markdown(f"Quieres escucharlo?, copia el texto")
+     
      #st.write(f" {output_text}")
     
 #if st.button("ElevenLAabs",key=2):
