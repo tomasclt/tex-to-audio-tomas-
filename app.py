@@ -9,7 +9,7 @@ from PIL import Image
 st.title("Una pequeña Fábula.")
 image = Image.open('gato_raton.png')
 
-st.image(image, width=300)
+st.image(image, width=400)
 
 try:
     os.mkdir("temp")
@@ -21,7 +21,10 @@ st.write('¡Ay! -dijo el ratón-. El mundo se hace cada día más pequeño. Al p
          ' Corría y corría y por cierto que me alegraba ver esos muros, a diestra y siniestra, en la distancia. ' 
          ' Pero esas paredes se estrechan tan rápido que me encuentro en el último cuarto y ahí en el rincón está '  
          ' la trampa sobre la cual debo pasar -Todo lo que debes hacer es cambiar de rumbo -dijo el gato...y se lo comió. ' 
-         )
+         
+         ' Franz Kafka.'
+        
+        )
            
 
 text = st.text_input("Ingrese El texto.")
