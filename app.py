@@ -9,8 +9,7 @@ from PIL import Image
 st.title("Una pequeña Fábula.")
 image = Image.open('gato_raton.png')
 
-st.image(image, width=200)
-
+st.image(image, width=300)
 
 try:
     os.mkdir("temp")
