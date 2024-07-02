@@ -35,7 +35,7 @@ tld='us'
 
 def text_to_speech(text, tld):
     
-    tts = gTTS(text,'en-us', tld, slow=False) # tts = gTTS(text,'en', tld, slow=False)
+    tts = gTTS(text,'en', tld, slow=False) # tts = gTTS(text,'en', tld, slow=False)
     try:
         my_file_name = text[0:20]
     except:
