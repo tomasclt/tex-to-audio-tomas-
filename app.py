@@ -65,7 +65,7 @@ if st.button("convertir a Audio"):
 #     audio = client.generate(text=f" {output_text}",voice="Rachel",model="eleven_multilingual_v1")
 #     audio_file = open(f"temp/{audio}.mp3", "rb")
 
-     with open("temp/audio.mp3", "rb") as f:
+     with open("audio.mp3", "rb") as f:
          data = f.read()
 
      def get_binary_file_downloader_html(bin_file, file_label='File'):
