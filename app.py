@@ -67,14 +67,12 @@ if st.button("convertir a Audio"):
 
      with open("temp/audio.mp3", "rb") as f:
          data = f.read()
-try:
- def get_binary_file_downloader_html(bin_file, file_label='File'):
-    bin_str = base64.b64encode(data).decode()
-    href = f'<a href="data:application/octet-stream;base64,{bin_str}" download="{os.path.basename(bin_file)}">Download {file_label}</a>'
-    return href
-except:
-    pass
-st.markdown(get_binary_file_downloader_html("audio.mp3", file_label="Audio File"), unsafe_allow_html=True)
+
+     def get_binary_file_downloader_html(bin_file, file_label='File'):
+        bin_str = base64.b64encode(data).decode()
+        href = f'<a href="data:application/octet-stream;base64,{bin_str}" download="{os.path.basename(bin_file)}">Download {file_label}</a>'
+        return href
+     st.markdown(get_binary_file_downloader_html("audio.mp3", file_label="Audio File"), unsafe_allow_html=True)
 
 def remove_files(n):
     mp3_files = glob.glob("temp/*mp3")
