@@ -35,7 +35,7 @@ tld='us'
 
 def text_to_speech(text, tld):
     
-    tts = gTTS(text,'en', tld, slow=False) # tts = gTTS(text,'en', tld, slow=False)
+    tts = gTTS(text,'en-us', tld, slow=False) # tts = gTTS(text,'en', tld, slow=False)
     try:
         my_file_name = text[0:20]
     except:
@@ -47,7 +47,7 @@ def text_to_speech(text, tld):
 #display_output_text = st.checkbox("Verifica el texto")
 
 if st.button("convertir a Audio"):
-     result, output_text = text_to_speech(text, 'en')#'tld
+     result, output_text = text_to_speech(text, 'en-us')#'tld
      audio_file = open(f"temp/{result}.mp3", "rb")
      audio_bytes = audio_file.read()
      st.markdown(f"## Tú audio:")
