@@ -31,7 +31,7 @@ st.write('¡Ay! -dijo el ratón-. El mundo se hace cada día más pequeño. Al p
 st.markdown(f"Quieres escucharlo?, copia el texto")
 text = st.text_input("Ingrese El texto a escuchar.")
 
-tld='us'
+tld='com'
 
 def text_to_speech(text, tld):
     
@@ -47,7 +47,7 @@ def text_to_speech(text, tld):
 #display_output_text = st.checkbox("Verifica el texto")
 
 if st.button("convertir a Audio"):
-     result, output_text = text_to_speech(text, 'en-us')#'tld
+     result, output_text = text_to_speech(text, 'en')#'tld
      audio_file = open(f"temp/{result}.mp3", "rb")
      audio_bytes = audio_file.read()
      st.markdown(f"## Tú audio:")
