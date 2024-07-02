@@ -31,11 +31,11 @@ st.write('¡Ay! -dijo el ratón-. El mundo se hace cada día más pequeño. Al p
 st.markdown(f"Quieres escucharlo?, copia el texto")
 text = st.text_input("Ingrese El texto a escuchar.")
 
-tld="es"
+tld="en"
 
 def text_to_speech(text, tld):
     
-    tts = gTTS(text,"es", tld, slow=False)
+    tts = gTTS(text,"en", tld, slow=False)
     try:
         my_file_name = text[0:20]
     except:
