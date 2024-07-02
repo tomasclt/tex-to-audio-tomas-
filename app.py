@@ -31,7 +31,7 @@ st.write('¡Ay! -dijo el ratón-. El mundo se hace cada día más pequeño. Al p
 st.markdown(f"Quieres escucharlo?, copia el texto")
 text = st.text_input("Ingrese El texto a escuchar.")
 
-tld="en"
+tld="us"
 
 def text_to_speech(text, tld):
     
