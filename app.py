@@ -33,10 +33,17 @@ st.markdown(f"Quieres escucharlo?, copia el texto")
 text = st.text_input("Ingrese El texto a escuchar.")
 
 tld='com'
+option_lang = st.selectbox(
+    "Selecciona el lenguaje",
+    ("Español", "English"))
+if option_lang=="Español" :
+    lg='es'
+if option_lang=="English" :
+    lg='en'
 
-def text_to_speech(text, tld):
+def text_to_speech(text, tld,lg):
     
-    tts = gTTS(text,lang='en') # tts = gTTS(text,'en', tld, slow=False)
+    tts = gTTS(text,lang=lg) # tts = gTTS(text,'en', tld, slow=False)
     try:
         my_file_name = text[0:20]
     except:
